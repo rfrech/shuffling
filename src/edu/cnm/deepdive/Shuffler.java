@@ -98,7 +98,7 @@ public class Shuffler {
     }
   }
 
-  public void shuffle(Object[] data) {
+  public <T> void shuffle(T[] data) {
     for (int i = data.length - 1; i > 0; i--) {
       int j = rng.nextInt(i + 1); //Returns random in{0, 1, ..., i}
       if (i != j) {
